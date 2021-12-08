@@ -6,19 +6,20 @@ import './App.css';
 function App() {
   console.log(localStorage.getItem("done"))
   return (
-    <div className="App">
-      
+    
+      <div className="App"> 
       <Router>
          <Switch>
-          <Route path="/home" ><Home/>
+          <Route path="/home"  >
+            <Home/>
           </Route>
           <Route path="/login">
           <Login></Login>
           </Route>
         </Switch>
       </Router>
-      
-    </div>
+      </div>
+    
   );
 }
 
